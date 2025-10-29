@@ -1,0 +1,56 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+  <div class="row">
+    <div class="col-10 offset-2">
+
+   
+    <h5 class="col-10 offset-2"><%= sunari.title %></h5>
+<div class="card" style="width: 30rem;">
+  <img src="<%= sunari.image.url %>"  class="card-img-top" alt="listing_image" style="height: 20rem">
+  <div class="card-body">
+    <p class="card-text">
+  <ul>
+      <li><%= sunari.description %></li>
+      <li> <%= sunari.price %></li>
+      <li><%= sunari.location %></li>
+      <li><%= sunari.country %></li>
+      </ul>
+  </div>
+</div></div>
+ </div>
+<div class="contain">
+  <div class="edit">
+<button class="btn btn-dark">
+  
+<a href="/listings/<%= sunari._id %>/edit" >Edit your List</a>
+</button>
+</div>
+ <div class="delete">
+<form  method="POST" action="/listings/<%=sunari._id%>?_method=DELETE"> 
+      <button class="btn btn-dark ">Delete this List</button>
+    </form>
+    </div>
+    </div>
+    <br><hr>
+    <div class="col-10 offset-2">
+      <h1>Leave a Review</h1>
+      <form action="/listings/<%= sunari._id %>/reviews" method="POST" class="mb-3 mt-3" novalidate class="needs-validation">
+        <lable for="rating" class="form-label">Rating</lable>
+        <input type="range" min="1" max="5" id="rating" name="review[rating]" >
+            <div class="valid-feedback">Looks Good</div>
+        <div class="invalid-feedback">This field is Mendatory</div><br><br>
+        <label for="comment" class="form-label" >Comment</label>
+        <textarea name="review[comment]" class="form-control" id="comment" required></textarea>
+            <div class="valid-feedback">Looks Good</div>
+        <div class="invalid-feedback">This field is Mendatory</div>
+        <button class="btn btn-dark mb-3 mt-3">Submit</button>
+      </form>
+    </div>
+ 
+
+ 
+   
+
+
+  
+

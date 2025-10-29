@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+    <h5>listings of different restros</h5>
+<!--<form method="GET", action="/listings/new">
+    <button>
+        create new list
+    </button>
+</form>-->
+
+
+<div class="row" >
+    
+ <% for(let Listing of sunaar) { %>
+
+    <div class="card" style="width: 20rem;" >
+        <a href="/listings/<%= Listing._id %>" class="listing-link" >
+  <img src="<%= Listing.image.url %>" class="card-img-top" alt="listing_image" style="height:20rem">
+  <div class="card-body">
+    <p class="card-info"><%= Listing.title %><br>
+   <%= Listing.price%><br>
+        <%= `${Listing.location }${","}`%>
+                <%= Listing.country %></p>
+  </div>
+  </a>
+</div>
+ 
+ <% } %>
+ 
+
+</div>
+
+
+

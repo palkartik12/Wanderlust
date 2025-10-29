@@ -1,0 +1,94 @@
+body{
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+}
+.fa-compass{
+    font-size: 10 rem;
+    color: brown;
+}
+.navbar{
+    height: 20 rem;
+}
+.f-info{
+    height: 3rem;
+    /* justify-content: center; */
+    display: flex;
+    
+
+}
+.f-info-social {
+    border-right: 2rem;
+ /* justify-content: center;  */
+  padding: 0.7rem;
+}
+
+.f-info-social a {
+    margin-left: auto;
+}
+.f-info-sites {
+   margin-right: auto;
+   padding: 0.7rem;
+}
+
+.f-info-sites a {
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.card{
+    display: flex;
+    margin: 14px;
+margin-inline: 40px;
+
+padding: 0px;
+   border: none !important;
+
+}
+.listing-link{
+    text-decoration: none !important;
+}
+.row{
+        justify-content: center !important;
+}
+.card-img-top{
+border-radius: 1rem !important;
+width: 100% !important;
+
+}
+.card-img-top:hover {
+    opacity: 80%;
+}
+.card-body{
+    text-decoration: none !important;
+    color:black !important;
+    padding: 0% !important;
+   font-family: "Ubuntu", sans-serif !important;
+}
+.card-body:hover{
+color:darkslategray !important;
+}
+.container{
+    flex: 1 !important;
+}
+.btn{
+     background-color: brown !important;
+}
+.btn:hover {
+    background-color: black !important;
+}
+.btn a {
+    text-decoration: none !important;
+    background-color: brown !important;
+    color:white !important;
+}
+.btn a:hover {
+    background-color: black !important;
+}
+.contain{
+    display: flex !important;
+    margin-left: 21%;
+}
+.edit{
+    margin-right: 6%;
+}
